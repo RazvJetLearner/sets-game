@@ -1,6 +1,11 @@
 import random
-discovered_num = {}
-numbers = {random.randint(0,10), random.randint(0,10), random.randint(0,10), random.randint(0,10)}
+discovered_num = set()
+numbers = set()
+
+for i in range(5):
+    val = random.randint(0,10)
+    numbers.add(val)
+
 
 print(numbers)
 
